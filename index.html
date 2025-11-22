@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechStore - Descubre los mejores productos tecnologicos: smartphones, laptops, accesorios y mas. Calidad garantizada y precios competitivos.">
+    <meta name="keywords" content="tecnologia, smartphones, laptops, accesorios, gadgets, electronica">
+    <meta name="author" content="TechStore">
+    <meta property="og:title" content="TechStore - Tu tienda de tecnologia">
+    <meta property="og:description" content="Los mejores productos tecnologicos al mejor precio">
+    <meta property="og:type" content="website">
+    <title>TechStore - Tu tienda de tecnologia premium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container" aria-label="Navegacion principal">
+            <div class="nav__logo">
+                <i class="fa-solid fa-microchip logo-icon"></i>
+                <h1>TechStore</h1>
+            </div>
+            <ul class="nav__menu">
+                <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
+                <li class="nav__item"><a href="#productos" class="nav__link">Productos</a></li>
+                <li class="nav__item"><a href="#ofertas" class="nav__link">Ofertas</a></li>
+                <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+            </ul>
+            <button class="nav__cta btn btn--primary">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Carrito (0)
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero__background"></div>
+            <div class="hero__content container">
+                <span class="hero__badge">Nueva coleccion 2025</span>
+                <h2 class="hero__title">Descubre la mejor <span class="white-text">tecnologia</span></h2>
+                <p class="hero__description">Productos premium con garantia extendida. Envios express gratis en compras superiores a 50 EUR</p>
+                <div class="hero__buttons">
+                    <a href="#productos" class="btn btn--primary btn--large">
+                        <span>Ver productos</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#ofertas" class="btn btn--secondary btn--large">Ver ofertas</a>
+                </div>
+                <div class="hero__stats">
+                    <div class="stat">
+                        <div class="stat__number">10k+</div>
+                        <div class="stat__label">Productos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">50k+</div>
+                        <div class="stat__label">Clientes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat__number">4.9</div>
+                        <div class="stat__label">Valoracion</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll">
+                <span>Scroll</span>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Categorias</span>
+                    <h2 class="section__title">Explora por categoria</h2>
+                    <p class="section__subtitle">Encuentra exactamente lo que necesitas</p>
+                </div>
+                <div class="categories__grid">
+                    <article class="category-card">
+                        <div class="category-card__icon">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                        </div>
+                        <h3 class="category-card__title">Smartphones</h3>
+                        <p class="category-card__description">Ultimos modelos de las mejores marcas</p>
+                        <a href="#productos" class="category-card__link">
+                            Ver mas
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-card__icon">
+                            <i class="fa-solid fa-laptop"></i>
+                        </div>
+                        <h3 class="category-card__title">Laptops</h3>
+                        <p class="category-card__description">Potencia y rendimiento profesional</p>
+                        <a href="#productos" class="category-card__link">
+                            Ver mas
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-card__icon">
+                            <i class="fa-solid fa-headphones"></i>
+                        </div>
+                        <h3 class="category-card__title">Audio</h3>
+                        <p class="category-card__description">Sonido de alta calidad</p>
+                        <a href="#productos" class="category-card__link">
+                            Ver mas
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                    <article class="category-card">
+                        <div class="category-card__icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <h3 class="category-card__title">Wearables</h3>
+                        <p class="category-card__description">Tecnologia que llevas contigo</p>
+                        <a href="#productos" class="category-card__link">
+                            Ver mas
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="products">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Productos</span>
+                    <h2 class="section__title">Productos destacados</h2>
+                    <p class="section__subtitle">Seleccionados especialmente para ti</p>
+                </div>
+                <div class="products__grid">
+                    <article class="product-card">
+                        <div class="product-card__badges">
+                            <span class="badge badge--new">Nuevo</span>
+                            <button class="product-card__favorite" aria-label="Agregar a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-card__image">
+                            <img src="media/iphone_17pro__0s6piftg70ym_large_2x.jpg" alt="iPhone 17 Pro" class="product-img">
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="rating-count">(324)</span>
+                            </div>
+                            <h3 class="product-card__title">iPhone 17 Pro</h3>
+                            <p class="product-card__description">El smartphone mas avanzado con chip A19 Pro y titanio</p>
+                            <div class="product-card__specs">
+                                <span class="spec">128GB</span>
+                                <span class="spec">5G</span>
+                                <span class="spec">ProMotion</span>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="price-group">
+                                    <span class="product-card__price">1.219 EUR</span>
+                                    <span class="price-note">IVA incluido</span>
+                                </div>
+                                <a href="https://www.apple.com/es/iphone/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                                    Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card product-card--featured">
+                        <div class="product-card__badges">
+                            <span class="badge badge--sale">-20%</span>
+                            <button class="product-card__favorite" aria-label="Agregar a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-card__image">
+                            <img src="media/mba13-skyblue-select-202503.jpg" alt="MacBook Air M2" class="product-img">
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="rating-count">(512)</span>
+                            </div>
+                            <h3 class="product-card__title">MacBook Air M2</h3>
+                            <p class="product-card__description">Ultraportatil con el chip M2 de Apple. Ligero y potente</p>
+                            <div class="product-card__specs">
+                                <span class="spec">256GB SSD</span>
+                                <span class="spec">8GB RAM</span>
+                                <span class="spec">13.6"</span>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="price-group">
+                                    <span class="product-card__price--old">1.299 EUR</span>
+                                    <span class="product-card__price">1.039 EUR</span>
+                                    <span class="price-note">Ahorra 260 EUR</span>
+                                </div>
+                                <a href="https://www.apple.com/es/macbook-air-m2/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                                    Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__badges">
+                            <button class="product-card__favorite" aria-label="Agregar a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-card__image">
+                            <img src="media/61vBghtTdmL._AC_UF1000,1000_QL80_.jpg" alt="AirPods Pro 3" class="product-img">
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <span class="rating-count">(189)</span>
+                            </div>
+                            <h3 class="product-card__title">AirPods Pro 3</h3>
+                            <p class="product-card__description">Cancelacion de ruido activa mejorada con audio espacial adaptativo</p>
+                            <div class="product-card__specs">
+                                <span class="spec">ANC</span>
+                                <span class="spec">30h bateria</span>
+                                <span class="spec">USB-C</span>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="price-group">
+                                    <span class="product-card__price">279 EUR</span>
+                                    <span class="price-note">IVA incluido</span>
+                                </div>
+                                <a href="https://www.apple.com/es/airpods-pro/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                                    Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__badges">
+                            <span class="badge badge--popular">Popular</span>
+                            <button class="product-card__favorite" aria-label="Agregar a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-card__image">
+                            <img src="media/product_s11__c23ym6fc09me_large_2x.png" alt="Apple Watch Series 11" class="product-img">
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="rating-count">(891)</span>
+                            </div>
+                            <h3 class="product-card__title">Apple Watch Series 11</h3>
+                            <p class="product-card__description">Tu companero de salud y fitness con pantalla Always-On mejorada</p>
+                            <div class="product-card__specs">
+                                <span class="spec">GPS</span>
+                                <span class="spec">ECG</span>
+                                <span class="spec">IP68</span>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="price-group">
+                                    <span class="product-card__price">449 EUR</span>
+                                    <span class="price-note">IVA incluido</span>
+                                </div>
+                                <a href="https://www.apple.com/es/apple-watch/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                                    Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__badges">
+                            <span class="badge badge--trending">Trending</span>
+                            <button class="product-card__favorite" aria-label="Agregar a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-card__image">
+                            <img src="media/galaxy-s24-highlights-color-carousel-exclusive.jpg" alt="Samsung Galaxy S24" class="product-img">
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                </div>
+                                <span class="rating-count">(567)</span>
+                            </div>
+                            <h3 class="product-card__title">Samsung Galaxy S24</h3>
+                            <p class="product-card__description">Potencia e innovacion en un diseno elegante con IA</p>
+                            <div class="product-card__specs">
+                                <span class="spec">256GB</span>
+                                <span class="spec">120Hz</span>
+                                <span class="spec">Galaxy AI</span>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="price-group">
+                                    <span class="product-card__price">899 EUR</span>
+                                    <span class="price-note">IVA incluido</span>
+                                </div>
+                                <a href="https://www.samsung.com/es/smartphones/galaxy-s24/" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                                    Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="product-card">
+                        <div class="product-card__badges">
+                            <button class="product-card__favorite" aria-label="Agregar a favoritos">
+                                <i class="fa-regular fa-heart"></i>
+                            </button>
+                        </div>
+                        <div class="product-card__image">
+                            <img src="media/notebook-xps-15-9530-t-black-gallery-1.avif" alt="Dell XPS 15" class="product-img">
+                        </div>
+                        <div class="product-card__content">
+                            <div class="product-card__rating">
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <span class="rating-count">(234)</span>
+                            </div>
+                            <h3 class="product-card__title">Dell XPS 15</h3>
+                            <p class="product-card__description">Laptop premium para profesionales con pantalla OLED</p>
+                            <div class="product-card__specs">
+                                <span class="spec">Intel i7</span>
+                                <span class="spec">16GB RAM</span>
+                                <span class="spec">15.6" OLED</span>
+                            </div>
+                            <div class="product-card__footer">
+                                <div class="price-group">
+                                    <span class="product-card__price">1.599 EUR</span>
+                                    <span class="price-note">IVA incluido</span>
+                                </div>
+                                <a href="https://www.dell.com/es-es/shop/laptops-dell/xps-15/spd/xps-15-9530-laptop" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+                                    Ver detalles
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="ofertas" class="offers">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Ofertas</span>
+                    <h2 class="section__title">Ofertas especiales</h2>
+                    <p class="section__subtitle">Aprovecha nuestras mejores promociones</p>
+                </div>
+                <div class="offers__grid">
+                    <article class="offer-card offer-card--main">
+                        <div class="offer-card__background"></div>
+                        <div class="offer-card__content">
+                            <span class="offer-badge">Limitado</span>
+                            <h3 class="offer-card__title">Black Friday</h3>
+                            <p class="offer-card__description">Hasta 40% de descuento en productos seleccionados. No te pierdas esta oportunidad unica</p>
+                            <div class="offer-card__timer">
+                                <div class="timer-item">
+                                    <span class="timer-value">02</span>
+                                    <span class="timer-label">Dias</span>
+                                </div>
+                                <div class="timer-item">
+                                    <span class="timer-value">14</span>
+                                    <span class="timer-label">Horas</span>
+                                </div>
+                                <div class="timer-item">
+                                    <span class="timer-value">35</span>
+                                    <span class="timer-label">Min</span>
+                                </div>
+                            </div>
+                            <a href="#productos" class="btn btn--light btn--large">Aprovechar oferta</a>
+                        </div>
+                    </article>
+                    <article class="offer-card offer-card--secondary">
+                        <div class="offer-card__icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <div class="offer-card__content">
+                            <h3 class="offer-card__title">Envio express gratis</h3>
+                            <p class="offer-card__description">En compras superiores a 50 EUR. Recibe tu pedido en 24h</p>
+                        </div>
+                    </article>
+                    <article class="offer-card offer-card--secondary">
+                        <div class="offer-card__icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="offer-card__content">
+                            <h3 class="offer-card__title">Garantia extendida</h3>
+                            <p class="offer-card__description">2 anos de garantia en todos los productos sin coste adicional</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">Contacto</span>
+                    <h2 class="section__title">Estamos aqui para ayudarte</h2>
+                    <p class="section__subtitle">Contacta con nuestro equipo de atencion al cliente</p>
+                </div>
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="contact-card__content">
+                                <h3>Email</h3>
+                                <a href="mailto:info@techstore.com">info@techstore.com</a>
+                                <p>Respuesta en 24h</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="contact-card__content">
+                                <h3>Telefono</h3>
+                                <a href="tel:+34900123456">+34 900 123 456</a>
+                                <p>Lun-Vie 9:00-18:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card__icon">
+                                <i class="fa-solid fa-clock"></i>
+                            </div>
+                            <div class="contact-card__content">
+                                <h3>Horario</h3>
+                                <p>Lunes a Viernes</p>
+                                <p>9:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact__form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre completo</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Tu nombre" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="tu@email.com" required aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefono</label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="+34 600 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" name="message" class="form-input" rows="4" placeholder="Cuentanos como podemos ayudarte..." required aria-required="true"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full btn--large">
+                            Enviar mensaje
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__section footer__section--main">
+                    <div class="footer__logo">
+                        <i class="fa-solid fa-microchip logo-icon"></i>
+                        <h3>TechStore</h3>
+                    </div>
+                    <p class="footer__text">Tu tienda de confianza para productos tecnologicos de calidad premium. Innovacion al alcance de todos.</p>
+                    <div class="footer__social">
+                        <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Tienda</h4>
+                    <ul class="footer__list">
+                        <li><a href="#productos" class="footer__link">Productos</a></li>
+                        <li><a href="#ofertas" class="footer__link">Ofertas</a></li>
+                        <li><a href="#" class="footer__link">Novedades</a></li>
+                        <li><a href="#" class="footer__link">Mas vendidos</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Ayuda</h4>
+                    <ul class="footer__list">
+                        <li><a href="#contacto" class="footer__link">Contacto</a></li>
+                        <li><a href="#" class="footer__link">Envios</a></li>
+                        <li><a href="#" class="footer__link">Devoluciones</a></li>
+                        <li><a href="#" class="footer__link">Preguntas frecuentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer__section">
+                    <h4 class="footer__title">Legal</h4>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Terminos y condiciones</a></li>
+                        <li><a href="#" class="footer__link">Politica de privacidad</a></li>
+                        <li><a href="#" class="footer__link">Politica de cookies</a></li>
+                        <li><a href="#" class="footer__link">Aviso legal</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2025 TechStore. Todos los derechos reservados. Hecho con dedicacion para ofrecer la mejor experiencia de compra.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
